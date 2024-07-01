@@ -1,0 +1,106 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+  }
+  
+  .flats_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .flats_block2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .flex-container-for-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .flex-container-for-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .flex-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  /* Размещение меню в шапке */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Цвет фона шапки */
+    color: white; /* Цвет текста в шапке */
+    padding: 10px 20px;
+  }
+  
+  .menu {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .menu >li {margin-right: 270px;}
+  
+  /* Задание цвета фона и отступов для пунктов меню */
+  .menu-item:nth-child(1) {
+    background-color: #ff6347; /* Красный цвет */
+    padding: 5px 10px;
+  }
+  
+  .menu-item:nth-child(2) {
+    background-color: #4169e1; /* Синий цвет */
+    padding: 5px 10px;
+  }
+  
+  .menu-item:nth-child(3) {
+    background-color: #ffd700; /* Желтый цвет */
+    padding: 5px 10px;
+  }
+  
+  .menu-item:nth-child(4) {
+    background-color: #32cd32; /* Зеленый цвет */
+    padding: 5px 10px;
+  }
+  
+  /* Задание цвета блокам */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+  }
+  
+  .flats_block {
+    background-color: #f0f8ff; /* Голубой цвет */
+    padding: 20px;
+  }
+  
+  .flats_block2 {
+    background-color: #ffa07a; /* Лососевый цвет */
+    padding: 20px;
+  }
+  
+  .flex-container-for-containers {
+    background-color: #f5f5dc; /* Бежевый цвет */
+    padding: 20px;
+  }
+  
+  .flex-container-for-media {
+    background-color: #dda0dd; /* Сливовый цвет */
+    padding: 20px;
+  }
+  
+  .flex-container2 {
+    background-color: #add8e6; /* Светло-голубой цвет */
+    padding: 20px;
+  }

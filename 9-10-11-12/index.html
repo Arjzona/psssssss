@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пример вывода времени</title>
+  <script>
+    function showTime() {
+      var now = new Date();
+      var hours = now.getHours().toString().padStart(2, '0');
+      var minutes = now.getMinutes().toString().padStart(2, '0');
+      var timeString = hours + ':' + minutes;
+      alert('Текущее время: ' + timeString);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="myFunction()">Нажми меня</button>
+  <a href="javascript:alert('Привет, мир!')">Нажми меня</a>
+  <button onclick="showTime()">Показать время</button>
+  <script>
+    var count = 0;
+    while (count < 5) {
+      document.write("Алексейчук валерия<br>");
+      count++;
+    }
+  </script>
+ 
+ <script>
+  
+  var arrNew = [3, 5, -2, 8, -6, 4, 10];
+
+// Подсчет количества четных элементов
+var countEven = 0;
+for (var i = 0; i < arrNew.length; i++) {
+  if (arrNew[i] % 2 === 0) {
+    countEven++;
+  }
+}
+
+var maxElement = arrNew[0];
+  for (var j = 1; j < arrNew.length; j++) {
+    if (arrNew[j] > maxElement) {
+      maxElement = arrNew[j];
+    }
+  }
+ 
+// Вывод исходного массива
+document.write("<p>Исходный массив: </p>" + arrNew);
+
+// Изменение массива (умножение всех элементов на 2)
+for (var j = 0; j < arrNew.length; j++) {
+  arrNew[j] *= 2;
+}
+
+// Вывод измененного массива
+document.write("<p>Измененный массив (элементы умножены на 2): </p>" + arrNew);
+
+// Вывод количества четных элементов
+document.write("<p>Количество четных элементов: </p>" + countEven);
+document.write("<p>Максимальный элемент: </p>" + maxElement);
+</script>
+
+<script src="script2.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

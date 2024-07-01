@@ -1,0 +1,70 @@
+body {font-family:Georgia, 'Times New Roman';}
+img{
+    width: 200px;
+    height: 350px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    background-image: url(liflowers.jpg);
+    background-size: 250px;
+    background-repeat: repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  h2 {
+    font-size: 90px;
+    font-weight: 600;
+    font-family: '', cursive;
+    color: #e0d6e9;
+    text-shadow: 2px 2px 0px  #957dad,
+                 4px 4px 0px #ee4b2b,
+                 6px 6px 0px #00c2cb,
+                 8px 8px 0px #ff7f50,
+                 10px 10px 0px #553c9a;
+  }
+
+  .kk:hover {
+    transform: scaleX(-1);
+    border-radius: 20%;
+  }
+  
+  .spisok {list-style-image: url(U2.png);}
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color:rgb(193, 130, 168);
+    width: 100%;
+}
+td:first-child {
+  border-bottom: 2px dashed rgb(255, 0, 0);
+}
+
+input[type="reset"] {
+  background-color: #f44336;
+  color: white;              
+  padding: 10px 20px;        
+  text-align: center;       
+  text-decoration: none;     
+  display: inline-block;    
+  font-size: 16px;           
+  margin: 4px 2px;           
+  cursor: pointer;           
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; 
+  color: white;             
+  padding: 10px 20px;       
+  text-align: center;        
+  text-decoration: none;     
+  display: inline-block;     
+  font-size: 16px;           
+  margin: 4px 2px;          
+  cursor: pointer;          
+}
+.body1 {background-color: #957dad;}
+.body2 {background-image: url(pic.jpg)};

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личная информация</title>
+
+    <style>
+
+        .styled-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: scale(2);
+            border: 1px solid blue;
+        }
+    </style>
+
+    <script>
+        function take_info() {
+            // Устанавливаем таймер на 5 секунд
+            setTimeout(function() {
+                // Получаем информацию о последней модификации документа
+                var lastModified = document.lastModified;
+                // Отображаем эту информацию на странице
+                document.getElementById('take_info').textContent = 'Последняя модификация: ' + lastModified;
+            }, 5000); // 5000 миллисекунд = 5 секунд
+        }
+
+        function deleteImage() {
+            var img = document.getElementById('myImage');
+            if (img) {
+                img.remove();
+            }
+        }
+
+        function changeStyle() {
+            var img = document.getElementById('myImage');
+            if (img) {
+                img.classList.add('styled-image');
+            }
+        }
+
+        function showOsInfo() {
+            var userAgent = navigator.userAgent;
+            var os = "Неизвестная ОС";
+            if (userAgent.indexOf("Win") != -1) os = "Windows";
+            if (userAgent.indexOf("Mac") != -1) os = "MacOS";
+            if (userAgent.indexOf("X11") != -1) os = "UNIX";
+            if (userAgent.indexOf("Linux") != -1) os = "Linux";
+
+            var newWindow = window.open("", "", "width=300,height=200");
+            newWindow.document.write("<p>Операционная система пользователья: " + os + "</p>");
+
+            // Закрываем новое окно через 4 секунды
+            setTimeout(function() {
+                newWindow.close();
+            }, 4000);
+        }
+
+        window.onload = showOsInfo; // Показ информации об ОС при загрузке страницы
+    </script>
+</head>
+<body>
+
+    <div id="delete">    
+        <a href="https://www.youtube.com/">ссылка на любимый сайт</a>
+        <p>Алексейчук Валерия Игоревна</p>
+        <img id="myImage" src="baground.jpg" alt="Описание изображения" onclick="deleteImage()">
+    </div>
+
+    <button onclick="take_info()">получить информацию когда последний раз был модифицирован документ</button>
+    <a id="take_info"></a>
+    <p></p>
+    <button onclick="changeStyle()">Сменить стиль</button>
+    <div class="info1" id="info1"></div>
+
+    <div class="info" id="info"></div>
+
+</body>
+</html>
